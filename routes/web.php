@@ -36,4 +36,16 @@ Route::get('/', function () {
    Route::get('/testsiswa', function() {
     	$query = App\Siswaa::all();
     	return $query;
-    });
+});
+
+   Route::get('/about', function() {
+    return view('about');
+});
+
+   Route::get('cektampilan', function() {
+    return view('layouts.master');
+});
+
+      Route::get('ela', function() {
+    return view('tugas');
+});
